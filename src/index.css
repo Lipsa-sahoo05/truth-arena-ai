@@ -2,41 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Digital Public Square - Futuristic Design System
+All colors MUST be HSL. Glassmorphism and high-tech aesthetics.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark futuristic background */
+    --background: 220 15% 8%;
+    --foreground: 210 40% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glassmorphic cards with subtle transparency */
+    --card: 220 15% 12%;
+    --card-foreground: 210 40% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    /* Popover and overlays */
+    --popover: 220 15% 10%;
+    --popover-foreground: 210 40% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cyber blue primary with electric accents */
+    --primary: 200 100% 60%;
+    --primary-foreground: 220 15% 8%;
+    --primary-glow: 200 100% 70%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Neural network secondary */
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 210 40% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tech elements */
+    --muted: 220 15% 18%;
+    --muted-foreground: 210 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* AI verdict accent colors */
+    --accent: 280 100% 65%;
+    --accent-foreground: 220 15% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Moderation alerts */
+    --destructive: 0 85% 65%;
     --destructive-foreground: 210 40% 98%;
+    --warning: 45 100% 60%;
+    --success: 140 60% 50%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs with glow effects */
+    --border: 220 15% 20%;
+    --input: 220 15% 12%;
+    --ring: 200 100% 60%;
 
-    --radius: 0.5rem;
+    /* Fact-check verdict colors */
+    --verdict-true: 140 60% 50%;
+    --verdict-false: 0 85% 65%;
+    --verdict-mixed: 45 100% 60%;
+    --verdict-unverified: 210 20% 65%;
+
+    /* Glassmorphism effects */
+    --glass-bg: 220 15% 12% / 0.8;
+    --glass-border: 210 40% 95% / 0.1;
+    --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+    /* Neural network gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200, 100%, 60%), hsl(280, 100%, 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(220, 15%, 15%), hsl(220, 15%, 25%));
+    --gradient-glow: linear-gradient(135deg, hsl(200, 100%, 70% / 0.3), hsl(280, 100%, 70% / 0.3));
+
+    /* Advanced shadows and glows */
+    --shadow-neural: 0 0 40px hsl(200, 100%, 60% / 0.3);
+    --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 20px hsl(var(--primary) / 0.5);
+
+    /* Animation transitions */
+    --transition-neural: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-glow: all 0.3s ease-out;
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
