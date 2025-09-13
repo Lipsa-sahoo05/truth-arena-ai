@@ -82,8 +82,8 @@ export default {
           to: { height: "0", opacity: "0" },
         },
         "neural-pulse": {
-          "0%, 100%": { opacity: "1", transform: "scale(1)" },
-          "50%": { opacity: "0.8", transform: "scale(1.05)" },
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.02)" },
         },
         "glow-pulse": {
           "0%, 100%": { boxShadow: "0 0 20px hsl(var(--primary) / 0.3)" },
